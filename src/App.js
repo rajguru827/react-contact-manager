@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import './App.css';
 import AddContact from './components/AddContact';
 import ViewContacts from './components/ViewContacts';
@@ -11,8 +11,8 @@ function App() {
           <nav className="bg-green-400 p-3">
             <div className="container mx-auto">
               <ul className="flex">
-                <li>Contacts</li>
-                <li>Settings</li>
+                <li><Link to="/">Contacts</Link></li>
+                <li><Link to="/add-contact">Add Contact</Link></li>
               </ul>
             </div>
           </nav>

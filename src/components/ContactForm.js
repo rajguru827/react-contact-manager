@@ -24,7 +24,7 @@ class ContactForm extends React.Component {
                     <label className="block">
                         <span className="text-gray-700">First name</span>
                         <input type="text" name="firstName" className="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-                            value={this.state.firstName} onChange={this.handleInputChange} />
+                            value={this.state.firstName} onChange={this.handleInputChange} required/>
                     </label>
                     <label className="block">
                         <span className="text-gray-700">Last name</span>
